@@ -207,7 +207,6 @@
             this.treeViewAdv1.ToolTipControl.Size = new System.Drawing.Size(392, 112);
             this.treeViewAdv1.ToolTipControl.TabIndex = 0;
             this.treeViewAdv1.ToolTipControl.Visible = true;
-            this.treeViewAdv1.Click += new System.EventHandler(this.treeViewAdv1_Click);
             // 
             // Form1
             // 
@@ -218,7 +217,6 @@
             this.Controls.Add(this.treeViewAdv1);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.treeViewAdv1)).EndInit();
             this.ResumeLayout(false);
 

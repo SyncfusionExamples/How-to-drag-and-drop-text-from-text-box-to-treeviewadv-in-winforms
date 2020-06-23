@@ -21,9 +21,8 @@ namespace TreeViewAdv_DragAndDrop
             this.treeViewAdv1.AllowDrop = true;
             this.treeViewAdv1.DragEnter += TreeViewAdv1_DragEnter;
             this.treeViewAdv1.DragDrop += new DragEventHandler(treeViewAdv1_DragDrop);
-
-            Form2 form2 = new Form2();
-
+            Form2 form = new Form2();
+            form.Show();
         }
 
         private void TreeViewAdv1_DragEnter(object sender, DragEventArgs e)
@@ -39,21 +38,9 @@ namespace TreeViewAdv_DragAndDrop
                 Point pt = ((TreeViewAdv)sender).PointToClient(new Point(e.X, e.Y));
                 TreeNodeAdv dn = ((TreeViewAdv)sender).GetNodeAtPoint(pt);
                 node = new TreeNodeAdv(e.Data.GetData(DataFormats.Text).ToString());
-                dn.Nodes.Add(node.Clone());
+                dn.Nodes.Add(node);
                 dn.Expand();
-                node.Remove();
             }
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            Form2 form = new Form2();
-            form.Show();
-        }
-
-        private void treeViewAdv1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

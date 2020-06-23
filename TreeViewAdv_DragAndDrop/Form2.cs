@@ -29,9 +29,5 @@ namespace TreeViewAdv_DragAndDrop
             textBox.SelectAll();
             textBox.DoDragDrop(textBox.Text, DragDropEffects.Copy);
         }
-
-     
-
     }
-
 }

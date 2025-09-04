@@ -1,6 +1,6 @@
 # How to drag and drop TextBox text to WinForms TreeViewAdv control between two forms?
 
-To drag and drop TextBox text from one form to [WinForms TreeViewAdv]() control on another form, **AllowDrop** property should be enabled for both controls and **DragEnter** and **DragDrop** events should be used in TreeViewAdv.
+To drag and drop TextBox text from one form to [WinForms TreeViewAdv](https://www.syncfusion.com/winforms-ui-controls/treeview) control on another form, **AllowDrop** property should be enabled for both controls and **DragEnter** and **DragDrop** events should be used in TreeViewAdv.
 
 **C#:**
 ```csharp
@@ -52,5 +52,3 @@ Private Sub treeViewAdv1_DragDrop(sender As Object, e As DragEventArgs)
     End If
 End Sub
 ```
-
-View Sample in GitHub

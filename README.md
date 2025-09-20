@@ -5,6 +5,8 @@ To drag and drop TextBox text from one form to [WinForms TreeViewAdv](https://ww
 **C#:**
 ```csharp
 this.treeViewAdv1.AllowDrop = true;
+
+//Add event handlers
 this.treeViewAdv1.DragEnter += TreeViewAdv1_DragEnter;
 this.treeViewAdv1.DragDrop += new DragEventHandler(treeViewAdv1_DragDrop);
 
@@ -52,3 +54,5 @@ Private Sub treeViewAdv1_DragDrop(sender As Object, e As DragEventArgs)
     End If
 End Sub
 ```
+
+![Drag and drop between TreeViewAdv and TextBox](DragandDrop.png)
